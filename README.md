@@ -1,7 +1,7 @@
 loong64-it
 ===
 
-Quickly converts "old-world" `loongarch64` .deb packages to "new-world"
+Quickly puns "old-world" `loongarch64` .deb packages to "new-world"
 `loong64` ones - this is useful for distributions such as Debian and deepin
 who insists that architecture names should be different between worlds.
 
