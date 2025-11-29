@@ -104,10 +104,12 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-# Record working directory.
-SRCDIR="$(pwd)"
-
 # Rebuilding all requested packages.
 for i in "$@"; do
+	# Record working directory.
+	SRCDIR="$(basename $i)"
+
 	_convert_loong64 $i
+
+	unset SRCDIR
 done
